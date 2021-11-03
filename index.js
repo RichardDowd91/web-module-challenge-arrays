@@ -44,12 +44,15 @@ Use the copy function below to do the following:
   1. receive an array as a parameter - you will pass in originalFlavors as an argument when the function is invoked.
   2. Return a copy of the received array  
 */
-// take 1 parameter - you can call it anything but its holding the place for the array you will pass in as yout argument
+// take 1 parameter - you can call it anything but its holding the place for the array you will pass in as your argument
 
-function copy(/*your code here*/){
+function copy(array){
+  return [...array];
   //take a spread of your parameter
   /*your code here*/
 }    
+
+console.log( 'task 1 ', copy(originalFlavors))
 
 
 
