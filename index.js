@@ -55,9 +55,6 @@ function copy(array){
 console.log( 'task 1 ', copy(originalFlavors))
 
 
-
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
   1. an array as a parameter
@@ -69,10 +66,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 // taking 1 parameter - its holding the place for an array
-function is31Flavors(/*your code here*/){
- /*your code here*/
- // conditional inside of here - if its true return true, else return false ** it should be exactly 21 items
+function is31Flavors(array){
+    if(array.length === 31){
+      return true;
+    }else{
+      return false;
+    }
+ 
+ // conditional inside of here - if its true return true, else return false ** it should be exactly 31 items
 }
+console.log( 'task 2', is31Flavors(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
