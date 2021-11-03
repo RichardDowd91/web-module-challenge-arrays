@@ -157,15 +157,21 @@ Use the removeFlavorByName function below to do the following:
 */
 // 2 parameters array and the string we want to remove
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array, flavor){
+   for(let i = 0; i < array.length; i++){
+      if(array[i] === flavor){
+          array.splice(i, 1);
+      }
+    }
   // loop through the array and check every index for the exact match of the string, if it exists then remove it using splce
 
-  // .splce(start,how many items to delete);
+  // .splice(start,how many items to delete);
 
   // outside of the loop return the array
+  return array;
 }
 
+console.log('task 6', removeFlavorByName(originalFlavors, "Rocky Road"));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
