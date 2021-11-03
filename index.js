@@ -110,12 +110,14 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 // 1 parameter which will be a placeholder for the array
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array){
+  array.pop()
+  return array;
  // use .pop to remove the last item 
  // return the array
 }
 
+console.log('task 4', removeLastFlavor(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -130,10 +132,13 @@ Use the getFlavorByIndex function below to do the following:
 */
 // 2 parameters array / number (holding the place for an index)
 
-function getFlavorByIndex(/*your code here*/){
+function getFlavorByIndex(array, number){
+    return array[number];
   /*your code here*/
   // array[0]
 }
+
+console.log('task 5', getFlavorByIndex(originalFlavors, 2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
